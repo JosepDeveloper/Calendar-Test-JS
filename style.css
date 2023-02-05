@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+}
+
+section {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+div {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.month {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  display: grid;
+  grid-template-rows: 80px;
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  grid-template-rows: 30px;
+}
+
+li {
+  font-size: 1.5ch;
+}
+
+h2 {
+  margin-bottom: 4px;
+  padding: 0;
+}
+
+.first-day {
+  grid-column-start: var(--firts-day-start);
+}
+
+.day-name {
+  background-color: #eee;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 2px;
+  padding: 4px;
+  text-align: center;
+}
+
+button {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  border-radius: 100000px;
+  background: #09f;
+  color: #fff;
+  border: 0;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+#up {
+  bottom: 100px;
+}
