@@ -64,4 +64,4 @@ const createCalendar = ({ locale, year }) => {
   document.querySelector("div").innerHTML = html;
 };
 
-createCalendar({ year: 2077, locale: "es" });
+createCalendar({ year: 2024, locale: "es" });
